@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 80px;
   }
 
   .navbar-brand {
@@ -35,7 +35,7 @@ body {
   }
 
   
-  @media (max-width: 468px) {
+  @media (max-width: 688px) {
     .navbar {
       justify-content: center;
       flex-wrap: wrap;
@@ -264,7 +264,6 @@ body {
 
 
 footer{
-    height: 90vh;
     background-color: #242424;
 }
 
@@ -295,37 +294,61 @@ footer{
         /* FORM*/
 
 
-.email {
-    width: 400px;
-    padding-top: 140px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    color: #D9D9D9;
-    margin-bottom: 5px;
-    padding-left: 30px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-bottom: 1px solid white; 
-    background-color: transparent;
-    color: white;
-  }
-
-  .last-hr{
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 120px;
-  }
+        .email {
+            max-width: 400px;
+            padding-top: 140px;
+          }
+          
+          .form-group {
+            margin-bottom: 15px;
+          }
+          
+          label {
+            color: #D9D9D9;
+            margin-bottom: 5px;
+            padding-left: 30px;
+          }
+          
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-bottom: 1px solid white; 
+            background-color: transparent;
+            color: white;
+          }
+          
+          .last-hr {
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 120px;
+          }
+          
+          .btn-3 {
+            font-size: 18px;
+            font-weight: 700;
+            float: right;
+          }
+          
+          @media screen and (max-width: 440px) {
+            .email {
+              width: 10px;
+              padding-top: 40px;
+            }
+            .form-group{
+                width: 80%;
+            }
+          
+            label {
+              padding-left: 0;
+            }
+          
+            .last-hr {
+              margin-top: 80px;
+            }
+          }
   
 
     /* LAST BAR */
@@ -360,7 +383,7 @@ footer{
   }
 
   
-  @media (max-width: 468px) {
+  @media (max-width: 688px) {
     .lastbar {
       justify-content: center;
       flex-wrap: wrap;
@@ -378,7 +401,7 @@ footer{
 
   @media screen and (max-width: 1660px) {
     html{
-        font-size: 12px;
+        font-size: 16px;
     }
     .ring{
         display: none;
@@ -409,3 +432,100 @@ footer{
 
     }
   }
+
+  @media screen and (max-width: 898px) {
+    .home{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 0;
+    }
+    .image-profil{
+        margin: 0 auto;
+        
+    }
+    .pr{
+        background-size: cover;
+    }
+    .first-txt h1{
+        text-align: center;
+    }
+    .first-btn{
+        display:block;
+    }
+    
+  }
+
+  @media screen and (max-width: 753px) {
+
+    .last{
+        flex-direction: column;
+    }
+    .last-txt {
+        align-self: center;
+    }
+    .last-txt h1{
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+    }
+    .last-txt p{
+        font-size: 2rem;
+        text-align: center;
+        color: #d9d9d9;
+        font-weight: 100;
+    }
+    .email {
+        width: 400px;
+        padding-top: 100px;
+        margin: 0 auto;
+      }
+      label {
+        color: #D9D9D9;
+        font-size: 2rem;
+      }
+      .btn-3{
+        float: none;
+    }
+    .lastbar {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+  
+      .lastbar-icons {
+        justify-content: center;
+        margin-right: 0;
+      }
+      .lastbar-brand {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 0;
+    }
+  }
+
+  
+  @media (max-width: 645px) {
+    .first-txt{
+        margin: 0 auto;
+    }
+    .first-txt p {
+        text-align: center;
+    }
+    .first-btn{
+        display: inline-block;
+        text-align: center;
+        display: flex;
+justify-content: center;    }
+    .titre{
+        gap: 10%    ;
+    }
+    .card h2{
+        font-size: 2rem;
+    }
+    .card h4{
+        font-size: 1.5rem;
+    }
+  }
+
+
+ 
